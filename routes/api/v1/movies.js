@@ -1,4 +1,5 @@
 const express           = require('express');
+const { body }          = require('express-validator/check');
 const movieController   = require('../../../controllers/movie');
 
 const router = express.Router();
@@ -71,7 +72,9 @@ router.get('/:id', movieController.getMovie);
  *         content:
  *           application/json      
  */
-router.post('/', movieController.addMovie);
+router.post('/', [
+  body('title').trim().isLength({min: 5})
+], movieController.addMovie);
 
 /**
  * @swagger
@@ -97,7 +100,9 @@ router.post('/', movieController.addMovie);
  *          content:
  *            application/json
  */
-router.put('/:id', movieController.updateMovie);
+router.put('/:id', [
+  body('title').trim().isLength({min: 5})
+], movieController.updateMovie);
 
 /**
  * @swagger

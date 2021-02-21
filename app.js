@@ -78,6 +78,13 @@ app.use(
   swaggerUi.setup(swaggerSpec)
 );
 
+app.use((error, req, res, next) => {
+  console.log(error);
+  const status = error.statusCode || 500;
+  const message = error.message;
+  res.status(status).json({message: message});
+});
+
 app.set("port", process.env.PORT || 3000);
 app.listen(app.get('port'), () => {
   console.log('Server started on port ' + app.get('port'));

@@ -2,6 +2,8 @@ const fs        = require('fs');
 const path      = require('path');
 const Movie     = require('../models/movie');
 
+const { validationResult } = require('express-validator/check');
+
 exports.getMovies = (req, res, next) => {
   const currentPage = req.query.page || 1;
   const perPage = 5;
@@ -57,6 +59,15 @@ exports.getMovie = (req, res, next) => {
 
 
 exports.addMovie = (req, res, next) => {
+  const errors = validationResult(req);
+  if(!errors.isEmpty()) {
+    return res.status(422)
+              .json({
+                message: "Validation failed",
+                errors: errors.array()
+              });
+  }
+
   let images = req.body.images;
   if(req.file) {
     images = req.file.path;
@@ -98,6 +109,15 @@ exports.addMovie = (req, res, next) => {
 
 
 exports.updateMovie = (req, res, next) => {
+  const errors = validationResult(req);
+  if(!errors.isEmpty()) {
+    return res.status(422)
+              .json({
+                message: "Validation failed",
+                errors: errors.array()
+              });
+  }
+  
   const movieId = req.params.id;
   let images = req.body.images;
   if(req.file) {
