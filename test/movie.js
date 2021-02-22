@@ -34,7 +34,7 @@ describe('/GET movie', () => {
  */
 describe('GET /api/v1/movies/{id}', () => {
   it('it should GET a movie by ID', (done) => {
-    const movieId = '6033817b2cd4298f84556b21';
+    const movieId = '6033817b2cd4298f84556b21'; //to change based on database?
     chai.request(app)
       .get('/api/v1/movies/' + movieId)
       .end((err, res) => {
@@ -99,7 +99,7 @@ describe('POST /api/v1/movies', () => {
  */
 describe('PUT /api/v1/movies/{id}', () => {
   it('it should PUT an existing movie', (done) => {
-    const movieId = '603381882cd4298f84556b23';
+    const movieId = '603381882cd4298f84556b23'; //to change based on database?
     const movie = {
       title: 'Edited title'
     };

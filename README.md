@@ -18,4 +18,11 @@ module.exports = { DATABASECONNECTION }
 - Run the app with docker: `docker run -it -p 3000:3000 name-of-the-app` (map the available port in local machine to docker machine: 3000:3000)
 
 ### When the server is up
-- Navigate to your browser to see API document and go to: http://localhost:3000/api-docs
+- Navigate to your browser and go to: http://localhost:3000/api-docs to see the API document
+
+### Test the application
+- Run `npm test`
+
+### Note
+- In the project folder, there is movie collection ready to import to the MongoDB database
+- Also, Postman collection
