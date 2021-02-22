@@ -1,6 +1,7 @@
 const fs        = require('fs');
 const path      = require('path');
 const Movie     = require('../models/movie');
+const logger    = require('../utils/logger');
 
 const { validationResult } = require('express-validator/check');
 
@@ -29,6 +30,7 @@ exports.getMovies = (req, res, next) => {
       if(!err.statusCode) {
         err.statusCode = 500;
       }
+      logger.error(`400 || ${err.statusCode} - ${err}`);
       next(err);
     });
 };
@@ -41,6 +43,7 @@ exports.getMovie = (req, res, next) => {
       if(!movie) {
         const error = new Error('Could not find movie with ID ' + movieId);
         error.statusCode = 404;
+        logger.error(`${error}`);
         throw error;
       }
       res.status(200)
@@ -53,6 +56,7 @@ exports.getMovie = (req, res, next) => {
       if(!err.statusCode) {
         err.statusCode = 500;
       }
+      logger.error(`${err}`);
       next(err);
     });
 };
@@ -103,6 +107,7 @@ exports.addMovie = (req, res, next) => {
       if(!err.statusCode) {
         err.statusCode = 500;
       }
+      logger.error(`${err}`);
       next(err);
     });
 };
@@ -117,7 +122,7 @@ exports.updateMovie = (req, res, next) => {
                 errors: errors.array()
               });
   }
-  
+
   const movieId = req.params.id;
   let images = req.body.images;
   if(req.file) {
@@ -137,6 +142,7 @@ exports.updateMovie = (req, res, next) => {
       if(!movie){
         const error = new Error('Cound not find movie.');
         error.statusCode = 404;
+        logger.error(`${error}`);
         throw error;
       }
       if (movie.images && (images !== movie.images)) {
@@ -162,6 +168,7 @@ exports.updateMovie = (req, res, next) => {
       if(!err.statusCode) {
         err.statusCode = 500;
       }
+      logger.error(`${err}`);
       next(err);
     });
 };
@@ -174,6 +181,7 @@ exports.deleteMovie = (req, res, next) => {
       if(!movie) {
         const error = new Error('Could not find movie with ID ' + movieId);
         error.statusCode = 404;
+        logger.error(`${error}`);
         throw error;
       }
       if(movie.images){
@@ -191,6 +199,7 @@ exports.deleteMovie = (req, res, next) => {
       if(!err.statusCode) {
         err.statusCode = 500;
       }
+      logger(`${err}`);
       next(err);
     });
 };

@@ -6,6 +6,7 @@ const swaggerJsdoc  = require('swagger-jsdoc');
 const multer        = require('multer');
 
 const params        = require('./config/database');
+const logger        = require('./utils/logger');
 
 const app = express();
 
@@ -88,6 +89,7 @@ app.use((error, req, res, next) => {
 app.set("port", process.env.PORT || 3000);
 app.listen(app.get('port'), () => {
   console.log('Server started on port ' + app.get('port'));
+  logger.info(`Server started and running on ${app.get('port')}`);
 })
 
 module.exports = app;
