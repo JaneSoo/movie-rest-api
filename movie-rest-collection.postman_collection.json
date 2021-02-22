@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "381f980d-e472-46b1-86db-eb3c3ebd7ecd",
+		"name": "movie-rest-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/v1/movies/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/movies/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"movies",
+						""
+					]
+				},
+				"description": "Get list of movies"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/movies?page=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/movies?page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"movies"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Get movies with specified pagination"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/movies/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/movies/6032b55eca87ebc1c592c0ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"movies",
+						"6032b55eca87ebc1c592c0ec"
+					]
+				},
+				"description": "Get a single movie"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/movies/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "spirited away",
+							"type": "text"
+						},
+						{
+							"key": "shortDescription",
+							"value": "Best Japanese animation",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "From shy, guarded girl to lovely brave girl",
+							"type": "text"
+						},
+						{
+							"key": "releaseDate",
+							"value": "03-04-2003",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "125",
+							"type": "text"
+						},
+						{
+							"key": "images",
+							"type": "file",
+							"src": "/home/jane/Pictures/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/movies/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"movies",
+						""
+					]
+				},
+				"description": "Create a movie"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/movies/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Spirited away - 2001",
+							"type": "text"
+						},
+						{
+							"key": "shortDescription",
+							"value": "Best Japanese animation",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "From shy, guarded girl to lovely brave girl",
+							"type": "text"
+						},
+						{
+							"key": "releaseDate",
+							"value": "03-04-2003",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "125",
+							"type": "text"
+						},
+						{
+							"key": "images",
+							"type": "file",
+							"src": "/home/jane/Pictures/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/movies/60337b35d035e88931b8a241",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"movies",
+						"60337b35d035e88931b8a241"
+					]
+				},
+				"description": "Update a movie"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/movies/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/movies/60337b35d035e88931b8a241",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"movies",
+						"60337b35d035e88931b8a241"
+					]
+				},
+				"description": "Delete a movie"
+			},
+			"response": []
+		}
+	]
+}
