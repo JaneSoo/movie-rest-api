@@ -1,0 +1,223 @@
+[{
+  "_id": {
+    "$oid": "60337e302cd4298f84556b20"
+  },
+  "genres": [],
+  "title": "spirited away",
+  "description": "From shy, guarded girl to lovely brave girl",
+  "shortDescription": "Best Japanese animation",
+  "duration": 125,
+  "releaseDate": {
+    "$date": "2003-03-03T23:00:00Z"
+  },
+  "images": "images/2021-02-22T09:49:36.332Z-MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6033817b2cd4298f84556b21"
+  },
+  "genres": [
+    "thriller",
+    "advanture"
+  ],
+  "title": "Movie1",
+  "description": "description of the movie",
+  "shortDescription": "short description of the movie",
+  "duration": 120,
+  "releaseDate": {
+    "$date": "2020-01-01T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603381832cd4298f84556b22"
+  },
+  "genres": [
+    "thriller",
+    "advanture"
+  ],
+  "title": "Movie2",
+  "description": "description of the movie",
+  "shortDescription": "short description of the movie",
+  "duration": 120,
+  "releaseDate": {
+    "$date": "2020-01-01T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603381882cd4298f84556b23"
+  },
+  "genres": [
+    "thriller",
+    "advanture"
+  ],
+  "title": "Movie3",
+  "description": "description of the movie",
+  "shortDescription": "short description of the movie",
+  "duration": 120,
+  "releaseDate": {
+    "$date": "2020-01-01T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6033818e2cd4298f84556b24"
+  },
+  "genres": [
+    "thriller",
+    "advanture"
+  ],
+  "title": "Movie4",
+  "description": "description of the movie",
+  "shortDescription": "short description of the movie",
+  "duration": 120,
+  "releaseDate": {
+    "$date": "2020-01-01T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603381922cd4298f84556b25"
+  },
+  "genres": [
+    "thriller",
+    "advanture"
+  ],
+  "title": "Movie5",
+  "description": "description of the movie",
+  "shortDescription": "short description of the movie",
+  "duration": 120,
+  "releaseDate": {
+    "$date": "2020-01-01T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603381982cd4298f84556b26"
+  },
+  "genres": [
+    "thriller",
+    "advanture"
+  ],
+  "title": "Movie6",
+  "description": "description of the movie",
+  "shortDescription": "short description of the movie",
+  "duration": 120,
+  "releaseDate": {
+    "$date": "2020-01-01T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6033819e2cd4298f84556b27"
+  },
+  "genres": [
+    "thriller",
+    "advanture"
+  ],
+  "title": "Movie7",
+  "description": "description of the movie",
+  "shortDescription": "short description of the movie",
+  "duration": 120,
+  "releaseDate": {
+    "$date": "2020-01-01T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603381a32cd4298f84556b28"
+  },
+  "genres": [
+    "thriller",
+    "advanture"
+  ],
+  "title": "Movie8",
+  "description": "description of the movie",
+  "shortDescription": "short description of the movie",
+  "duration": 120,
+  "releaseDate": {
+    "$date": "2020-01-01T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603381a82cd4298f84556b29"
+  },
+  "genres": [
+    "thriller",
+    "advanture"
+  ],
+  "title": "Movie9",
+  "description": "description of the movie",
+  "shortDescription": "short description of the movie",
+  "duration": 120,
+  "releaseDate": {
+    "$date": "2020-01-01T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603381ae2cd4298f84556b2a"
+  },
+  "genres": [
+    "thriller",
+    "advanture"
+  ],
+  "title": "Movie10",
+  "description": "description of the movie",
+  "shortDescription": "short description of the movie",
+  "duration": 120,
+  "releaseDate": {
+    "$date": "2020-01-01T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603381b42cd4298f84556b2b"
+  },
+  "genres": [
+    "thriller",
+    "advanture"
+  ],
+  "title": "Movie11",
+  "description": "description of the movie",
+  "shortDescription": "short description of the movie",
+  "duration": 120,
+  "releaseDate": {
+    "$date": "2020-01-01T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603381bb2cd4298f84556b2c"
+  },
+  "genres": [
+    "thriller",
+    "advanture"
+  ],
+  "title": "Movie12",
+  "description": "description of the movie",
+  "shortDescription": "short description of the movie",
+  "duration": 120,
+  "releaseDate": {
+    "$date": "2020-01-01T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603381c02cd4298f84556b2d"
+  },
+  "genres": [
+    "thriller",
+    "advanture"
+  ],
+  "title": "Movie13",
+  "description": "description of the movie",
+  "shortDescription": "short description of the movie",
+  "duration": 120,
+  "releaseDate": {
+    "$date": "2020-01-01T00:00:00Z"
+  },
+  "__v": 0
+}]
